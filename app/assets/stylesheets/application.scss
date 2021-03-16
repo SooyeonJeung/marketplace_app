@@ -10,6 +10,47 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
  */
+
+
+ @import "bootstrap";
+
+
+tbody {
+
+}
+
+.pop-items {
+    font-style: italic;
+    color: blue;
+}
+
+.alert {
+    padding: 0;
+}
+
+.nav-link.active {
+    color:rgba(0, 0, 0, 0.9);
+}
+.nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+form {
+    padding: 1rem;
+}
+
+.profile {
+    padding: 2rem;
+    text-transform: capitalize;
+    font-weight: bold;;
+}
+
+.profile-photo {
+    width: 20%;
+}

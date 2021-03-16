@@ -1,8 +1,14 @@
+require_relative 'profiles_controller' 
+
 class ProductsController < ApplicationController
   before_action :authenticate_user!, only: [:restricted]
   before_action :set_product, only: %i[ show edit update destroy ]
 
   # GET /products or /products.json
+  def home
+
+  end
+
   def index
     @products = Product.all
   end
@@ -20,6 +26,8 @@ class ProductsController < ApplicationController
   # GET /products/1/edit
   def edit
   end
+
+  
 
   # POST /products or /products.json
   def create
