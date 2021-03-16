@@ -23,8 +23,10 @@ class ProductsController < ApplicationController
 
   # POST /products or /products.json
   def create
-    @product = Product.new(product_params)
-    
+    # @product = Product.new(product_params)
+    # @product.user = current_user
+
+    @product = current_user.products.create(product_params)
 
     respond_to do |format|
       if @product.save
@@ -74,4 +76,5 @@ class ProductsController < ApplicationController
     def product_params
       params.require(:product).permit(:name, :category, :description, :quantity, :price, :brand, :sold, :picture)
     end
+
 end

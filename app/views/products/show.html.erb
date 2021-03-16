@@ -16,11 +16,6 @@
 </p>
 
 <p>
-  <strong>Text:</strong>
-  <%= @product.text %>
-</p>
-
-<p>
   <strong>Quantity:</strong>
   <%= @product.quantity %>
 </p>
@@ -28,6 +23,21 @@
 <p>
   <strong>Price:</strong>
   <%= @product.price %>
+</p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @product.brand %>
+</p>
+
+<p>
+  <strong>Sold:</strong>
+  <%= @product.sold %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <% @product.picture %>
 </p>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
