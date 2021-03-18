@@ -9,7 +9,7 @@ class ProductsController < ApplicationController
 
   end
 
-  def listing
+  def payment
   end
 
   def index
