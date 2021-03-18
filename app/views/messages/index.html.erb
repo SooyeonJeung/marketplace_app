@@ -1,13 +1,24 @@
+
+<h1>All Messages</h1>
+<br>
+
 <ul>
   <% @messages.each do |message| %>
     <% if message.body %>
-      <li>
-        <h4><%= message.user.username %></h4>
-        <p><%= message.body %></p>
-      </li>
+      <table>
+        <h5>From: <%= message.user.username %></h5>
+        <p>Contents: <%= message.body %></p>
+        <p><i><%= message.created_at %></i></p>
+        <br>
+        ----------------------------------------------
+        <br>
+        <br>
+      </table>
     <% end %>
   <% end %>
 </ul>
+
+<h3>Send a Message</h3>
 
 <%= form_for [@conversation, @message] do |f| %>
   <div class="field">

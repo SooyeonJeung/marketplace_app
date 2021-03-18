@@ -5,8 +5,8 @@
 <div class="profile">
 
 <% if user_signed_in? %> 
-  <%# <%= link_to image_tag("profile.png", class: "profile-photo"), "/"%>  %>
-  <%="#{current_user.username}'s Profile" %> 
+  <%# <%= link_to image_tag("profile.png", class: "profile-photo"), "/"%>  
+  <h2><%="#{current_user.username}'s Profile" %></h2>
 
 <div>
   <p>
@@ -46,7 +46,7 @@
 
   <p>
     <strong>Picture:</strong>
-    <% @profile.picture %>
+    <% image_tag @profile.picture %>
 </div>
 <% end %>
 

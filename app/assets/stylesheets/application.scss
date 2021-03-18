@@ -108,6 +108,52 @@ table {
     }
 }
 
-.product-img {
-    height: 20rem;
-}
+.album {
+    min-height: 50rem; /* Can be removed; just added for demo purposes */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #f7f7f7;
+  }
+  
+  .card {
+    float: left;
+    width: 33.333%;
+    padding: .75rem;
+    margin-bottom: 2rem;
+    border: 0;
+  }
+  
+  .card > img {
+    margin-bottom: .75rem;
+  }
+  
+  .card-text {
+    font-size: 85%;
+  }
+  
+  .container {
+      margin: 0;
+      max-width:fit-content;
+  }
+
+.show-product {
+    margin: 3rem;
+    border-style: solid;
+    width: 30%;
+    p {
+        padding-left: 1rem;
+        padding: 1rem;
+    }
+
+  }
+
+.profile {
+    margin: 3rem;
+    border-style: solid;
+    width: 30%;
+    p {
+        padding-left: 1rem;
+        padding: 1rem;
+    }
+
+  }

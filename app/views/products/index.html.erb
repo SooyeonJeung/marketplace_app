@@ -7,10 +7,17 @@
 
 <h1>All Products</h1>
 
+<div class="album">
+<div class="container">
 
-<table>
+<div class="row">
+<div class="card">
     <% @products.each do |product| %>
-      <tr>
+        <br>
+        <br>
+        <br>
+    <%= image_tag product.picture if product.picture.attached? %>
+      <table>
         <td>Name: <%= product.name %></td>
         <td>Category: <%= product.category %></td>
         <td>Descriotion: <%= product.description %></td>
@@ -24,18 +31,22 @@
             Available
           <% end %>
         </td>
-        <%= image_tag product.picture, class:"product-img" if product.picture.attached? %>
-        <%# <%= link_to image_tag product.picture, class: "product-img"), "/"%>  
-
+          
+        ---------------
+        <br>
         <td><%= link_to 'Show', product %></td>
 
         <% if user_signed_in? && current_user.id == product.user_id %>
         <td><%= link_to 'Edit', edit_product_path(product) %></td>
         <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        
         <% end %>
-      </tr>
+      </table>
     <% end %>
-</table>
+</div>
+</div>
+</div>
+</div>
 
 <br>
 
