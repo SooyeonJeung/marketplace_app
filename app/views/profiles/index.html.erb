@@ -5,15 +5,49 @@
 <div class="profile">
 
 <% if user_signed_in? %> 
-  <%= link_to image_tag("profile.png", class: "profile-photo"), "/"%> 
+  <%# <%= link_to image_tag("profile.png", class: "profile-photo"), "/"%>  %>
   <%="#{current_user.username}'s Profile" %> 
-    <% if Product.where(user_id: current_user.id, sold: false)? %> 
-      <%= link_to "View Products", products_path %> 
-    <% else %> 
-      <%= link_to "Create Your Profile", new_profile_path %> 
-    <% end %> 
-<% else %> 
-  You <%= link_to "Sign In First", new_user_session_path %> 
+
+<div>
+  <p>
+    <strong>First Name:</strong>
+    <%= @profile.fname %>
+  </p>
+
+  <p>
+    <strong>Last Name:</strong>
+    <%= @profile.lname %>
+  </p>
+
+  <p>
+    <strong>Location:</strong>
+    <%= @profile.location %>
+  </p>
+
+  <p>
+    <strong>Activity No.:</strong>
+    <%= @profile.activity %>
+  </p>
+
+  <p>
+    <strong>Seller:</strong>
+    <%= @profile.seller %>
+  </p>
+
+  <p>
+    <strong>Buyer:</strong>
+    <%= @profile.buyer %>
+  </p>
+
+  <p>
+    <strong>Self Intro:</strong>
+    <%= @profile.selfintro %>
+  </p>
+
+  <p>
+    <strong>Picture:</strong>
+    <% @profile.picture %>
+</div>
 <% end %>
 
 </div>

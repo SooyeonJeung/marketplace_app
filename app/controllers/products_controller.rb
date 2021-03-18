@@ -9,8 +9,12 @@ class ProductsController < ApplicationController
 
   end
 
+  def listing
+  end
+
   def index
     @products = Product.all
+    @products = Product.search(params[:search])
   end
 
   # GET /products/1 or /products/1.json

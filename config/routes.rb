@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
-  root 'products#home'
+  root "products#home"
   get "/restricted", to: "products#restricted", as: "restricted"
   resources :products
+  get "/products/listing", to: "products#listing", as: "products_listing" 
   resources :profiles
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

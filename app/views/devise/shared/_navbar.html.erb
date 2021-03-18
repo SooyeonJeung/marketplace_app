@@ -20,13 +20,16 @@
 
       <a class="navbar-brand" href="/#">Home</a>
       <%= link_to "Profile", profiles_path, class: "nav-link active" %>
-      <%= link_to "Listings", products_path, class: "nav-link active" %>
-      <%= link_to "Conversations", products_path, class: "nav-link active" %>
+      <%= link_to "Shopping", products_path, class: "nav-link active" %>
+      <%= link_to "Your Products", products_listing_path, class: "nav-link active" %>
+      <%= link_to "Message", products_path, class: "nav-link active" %>
 </div>
       <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search for Products" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <%# <input class="form-control me-2" type="search" placeholder="Search for Products" aria-label="Search"> %>
+      
     </form>
+
+  
     
 
   </div>
