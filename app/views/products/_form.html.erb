@@ -18,18 +18,19 @@
 
   <div class="field">
     <%= form.label :category %>
-    <%= form.text_area :category %>
+    <%= form.select :category, ['Maternity Wear', 'For Moms', 'Furniture', 'Baby Wear', 'Baby Toys', 'Prams & Strollers', 'Car Seats', 'Feeding', 'Bath', 'Baby Books'] %>  
+ 
   </div>
 
   <div class="field">
     <%= form.label :description %>
-    <%= form.text_field :description %>
+    <%= form.text_area :description %>
   </div>
 
 
   <div class="field">
     <%= form.label :quantity %>
-    <%= form.number_field :quantity %>
+    <%= form.number_field :quantity, min: 1, max: 10 %>
   </div>
 
   <div class="field">
@@ -37,7 +38,23 @@
     <%= form.text_field :price %>
   </div>
 
+  <div class="field">
+    <%= form.label :brand %>
+    <%= form.text_field :brand %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sold %>
+    <%= form.check_box :sold %>
+  </div>
+
+  <div class="field">
+    <%= form.label :picture %>
+    <%= form.file_field :picture, accept: 'image/png, image/jpg, image/jpeg'%>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
+
 <% end %>

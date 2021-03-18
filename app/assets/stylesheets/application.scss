@@ -1,0 +1,159 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ */
+
+
+ @import "bootstrap";
+
+
+tbody {
+
+}
+
+.pop-items {
+    font-style: italic;
+    color: blue;
+    padding-top: 7rem;
+}
+
+.alert {
+    padding: 0;
+}
+
+.nav-link.active {
+    color:rgba(0, 0, 0, 0.9);
+}
+.nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+form {
+    padding: 1rem;
+}
+
+.profile {
+    padding: 2rem;
+    text-transform: capitalize;
+    font-weight: bold;;
+}
+
+.profile-photo {
+    width: 20%;
+}
+
+
+.home-image-one {
+    display: flex;
+    background-image: url("home.jpg");
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    h1{
+        font-size: 5rem;
+        color: white;
+        text-align: left;
+    }
+ }
+
+ .home-image-two {
+    display: flex;
+    background-image: url("secondhand.jpg");
+    width: 120%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    h1{
+        font-size: 5rem;
+        color: white;
+        text-align: left;
+    }
+ }
+
+
+
+table {
+    display: flex;
+    flex-direction: column;
+
+    tbody {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    tr {
+        display: block;
+
+    }
+
+    td {
+        display: block;
+    }
+}
+
+.album {
+    min-height: 50rem; /* Can be removed; just added for demo purposes */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #f7f7f7;
+  }
+  
+  .card {
+    float: left;
+    width: 33.333%;
+    padding: .75rem;
+    margin-bottom: 2rem;
+    border: 0;
+  }
+  
+  .card > img {
+    margin-bottom: .75rem;
+  }
+  
+  .card-text {
+    font-size: 85%;
+  }
+  
+  .container {
+      margin: 0;
+      max-width:fit-content;
+  }
+
+.show-product {
+    margin: 3rem;
+    border-style: solid;
+    width: 30%;
+    p {
+        padding-left: 1rem;
+        padding: 1rem;
+    }
+
+  }
+
+.profile {
+    margin: 3rem;
+    border-style: solid;
+    width: 30%;
+    p {
+        padding-left: 1rem;
+        padding: 1rem;
+    }
+
+  }

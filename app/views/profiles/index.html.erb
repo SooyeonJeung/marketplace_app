@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Profile</h1>
+
+<div class="profile">
+
+<% if user_signed_in? %> 
+  <%# <%= link_to image_tag("profile.png", class: "profile-photo"), "/"%>  
+  <h2><%="#{current_user.username}'s Profile" %></h2>
+
+<div>
+  <p>
+    <strong>First Name:</strong>
+    <%= @profile.fname %>
+  </p>
+
+  <p>
+    <strong>Last Name:</strong>
+    <%= @profile.lname %>
+  </p>
+
+  <p>
+    <strong>Location:</strong>
+    <%= @profile.location %>
+  </p>
+
+  <p>
+    <strong>Activity No.:</strong>
+    <%= @profile.activity %>
+  </p>
+
+  <p>
+    <strong>Seller:</strong>
+    <%= @profile.seller %>
+  </p>
+
+  <p>
+    <strong>Buyer:</strong>
+    <%= @profile.buyer %>
+  </p>
+
+  <p>
+    <strong>Self Intro:</strong>
+    <%= @profile.selfintro %>
+  </p>
+
+  <p>
+    <strong>Picture:</strong>
+    <% image_tag @profile.picture %>
+</div>
+<% end %>
+
+</div>

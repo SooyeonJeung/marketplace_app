@@ -1,0 +1,48 @@
+<%= form_with(model: profile) do |form| %>
+
+  <div class="field">
+    <%= form.label :fname %>
+    <%= form.text_field :fname %>
+  </div>
+  
+  <div class="field">
+    <%= form.label :lname %>
+    <%= form.text_field :lname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :location %>
+    <%= form.text_field :location %>
+  </div>
+
+
+  <div class="field">
+    <%= form.label :activity %>
+    <%= form.number_field :quantity, min: 1, max: 10000 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :seller %>
+    <%= form.check_box :seller %>
+  </div>
+
+  <div class="field">
+    <%= form.label :buyer %>
+    <%= form.check_box :buyer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :selfintro %>
+    <%= form.text_area :brand %>
+  </div>
+
+  <div class="field">
+    <%= form.label :picture %>
+    <%= form.file_field :picture, accept: 'image/png, image/jpg, image/jpeg'%>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+
+<% end %>
