@@ -63,3 +63,5 @@ gem 'bootstrap', '~> 5.0.0.beta2'
 gem 'jquery-rails'
 
 gem "aws-sdk-s3", "~> 1.91"
+
+gem "stripe", "~> 5.30"
