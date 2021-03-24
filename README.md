@@ -1,9 +1,30 @@
-# README
+# Phase Two 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## About
 
-Things you may want to cover:
+## Context
+
+## Target Audience
+
+## Installation Guideline
+
+## Functionality/Features
+
+## Tech Stack
+
+## Third Party App
+
+## Site Map
+
+## Wireframe
+
+## User Stories
+
+## Database Design
+
+## ERD
+
+
 
 * Ruby version
 
