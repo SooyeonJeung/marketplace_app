@@ -1,6 +1,6 @@
 # Phase Two 
 This is a user guide for the **Phase Two** application. The application is built on Ruby on Rails version ruby-2.7.2). 
-test.
+
 <br>
 
 ## Set Up
