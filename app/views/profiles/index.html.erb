@@ -48,6 +48,13 @@
     <strong>Picture:</strong>
     <% image_tag @profile.picture %>
 </div>
+
+<% if user_signed_in? && current_user.id == @profile.user_id %>
+        <td><%= link_to 'Edit', edit_profile_path(@profile) %></td>
+        <td><%= link_to 'Destroy', @profile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        
+        <% end %>
+
 <% end %>
 
 </div>
