@@ -53,7 +53,7 @@ More people in the world go through the journey of pregnancy and parenthood than
 <br>
 
 ## Application Link (deployed)
-www.marketplace-app201.herokuapp.com
+https://phase-two-marketplace.herokuapp.com/
 
 <br>
 
