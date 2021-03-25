@@ -83,15 +83,15 @@ https://github.com/SooyeonJeung/marketplace_app
     - Payment (stripe)
     - Testing (rspec)
 - Sitemap
-![ERD](docs/sitemap.png)
+![ERD](app/assets/images/docs/docs/erd_marketplaceapp.png)
 
 - Screenshots
-![ERD](docs/screenshot/screenshot_home.png)
-![ERD](docs/screenshot/screenshot_view_profile.png)
-![ERD](docs/screenshot/screenshot_add_new_profile.png)
-![ERD](docs/screenshot/screenshot_view_products.png)
-![ERD](docs/screenshot/screenshot_add_new_product.png)
-![ERD](docs/screenshot/screenshot_messages.png)
+![ERD](app/assets/images/docs/docs/screenshot/screenshot_home.png)
+![ERD](app/assets/images/docs/docs/screenshot/screenshot_view_profile.png)
+![ERD](app/assets/images/docs/docs/screenshot/screenshot_add_new_profile.png)
+![ERD](app/assets/images/docs/docs/screenshot/screenshot_view_products.png)
+![ERD](app/assets/images/docs/docs/screenshot/screenshot_add_new_product.png)
+![ERD](app/assets/images/docs/docs/screenshot/screenshot_messages.png)
 
 - The target audience is parents going through pregnancy and parenthood who are looking for quality secondhand products for moms and babies. Regarding the maternity section, the core audience would be women going through pregnancy.
 
@@ -118,22 +118,22 @@ https://github.com/SooyeonJeung/marketplace_app
 <br>
 
 ## Wireframes
-![Home_Page](docs/wireframe_slides/Home_Page_wireframe_1:11.png)
-![Sign_In](docs/wireframe_slides/Sign_In_wireframe_2:11.png)
-![Sign_Up](docs/wireframe_slides/Sign_Up_wireframe_3:11.png)
-![Navbar](docs/wireframe_slides/Navbar_Details_wireframe_4:11.png)
-![Signed_In_Home](docs/wireframe_slides/Signed_In_Home_wireframe_5:11.png)
-![Signed_In_Profile](docs/wireframe_slides/Signed_In_Profile_wireframe_6:11.png)
-![Add_New_Profile](docs/wireframe_slides/Signed_In_Add_New_Profile_wireframe_7:11.png)
-![Shopping_View_All_Products](docs/wireframe_slides/Shopping_View_All_Products_wireframe_8:11.png)
-![Shopping_Show_Payment](docs/wireframe_slides/Shopping_Show_Payment_wireframe_9:11.png)
-![Add_New_Products](docs/wireframe_slides/Add_New_Products_wireframe_10:11.png)
-![Message](docs/wireframe_slides/Message_wireframe_11:11.png)
+![Home_Page](app/assets/images/docs/docs/wireframe_slides/Home_Page_wireframe_1:11.png)
+![Sign_In](app/assets/images/docs/docs/wireframe_slides/Sign_In_wireframe_2:11.png)
+![Sign_Up](app/assets/images/docs/docs/wireframe_slides/Sign_Up_wireframe_3:11.png)
+![Navbar](app/assets/images/docs/docs/wireframe_slides/Navbar_Details_wireframe_4:11.png)
+![Signed_In_Home](app/assets/images/docs/docs/wireframe_slides/Signed_In_Home_wireframe_5:11.png)
+![Signed_In_Profile](app/assets/images/docs/docs/wireframe_slides/Signed_In_Profile_wireframe_6:11.png)
+![Add_New_Profile](app/assets/images/docs/docs/wireframe_slides/Signed_In_Add_New_Profile_wireframe_7:11.png)
+![Shopping_View_All_Products](app/assets/images/docs/docs/wireframe_slides/Shopping_View_All_Products_wireframe_8:11.png)
+![Shopping_Show_Payment](app/assets/images/docs/docs/wireframe_slides/Shopping_Show_Payment_wireframe_9:11.png)
+![Add_New_Products](app/assets/images/docs/docs/wireframe_slides/Add_New_Products_wireframe_10:11.png)
+![Message](app/assets/images/docs/docs/wireframe_slides/Message_wireframe_11:11.png)
 
 <br>
 
 ## ERD
-![ERD](docs/erd_marketplaceapp.png)
+![ERD](app/assets/images/docs/docs/erd_marketplaceapp.png)
 
 <br>
 
@@ -251,7 +251,7 @@ Used for storing images in the application. Contains information such as fillena
 ## Project Tracking & Management
 - I used **Trello board** to write an MVP, to-do lists, and project management plan(priorities, deadline, the checklist). 
 Link: https://trello.com/b/jFsidEyu/two-sided-marketplace-app
-![ERD](docs/trello_board.png)
+![ERD](app/assets/images/docs/docs/trello_board.png)
 
 - I used **Github** to track my source code and working history versions. I've also written a readme documentation to create a user guide. 
 Link: https://github.com/SooyeonJeung/marketplace_app
