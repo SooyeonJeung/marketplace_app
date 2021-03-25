@@ -1,5 +1,14 @@
 # Phase Two 
 
+
+- give me explicit instructions for cloning and getting your app running, and tell me if it has been tested only on mac or windows. Pretend I am a child who has never cloned a ruby app before
+
+- if you have time do a screen recording of a walkthrough of your app, then even if something breaks between now and marking I can mark all the features
+
+- make sure I can get into your github repo by making it public or inviting me
+
+
+
 ## About
 
 ## Context

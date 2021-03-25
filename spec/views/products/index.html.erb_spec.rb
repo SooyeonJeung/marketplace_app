@@ -4,7 +4,7 @@ RSpec.describe "products/index", type: :view do
   before(:each) do
     assign(:products, [
       Product.create!(
-        username: nil,
+        user_id: current_user.id,
         name: "Name",
         category: "Category",
         description: "Text",
@@ -14,7 +14,7 @@ RSpec.describe "products/index", type: :view do
         sold: false,
       ),
       Product.create!(
-        username: nil,
+        user_id: current_user.id,
         name: "Name",
         category: "Category",
         description: "Text",
@@ -28,7 +28,7 @@ RSpec.describe "products/index", type: :view do
 
   it "renders a list of products" do
     render
-    assert_select "tr>td", text: nil.to_s, count: 2
+    assert_select "tr>td", text: current_user.id.to_s, count: 2
     assert_select "tr>td", text: "Name".to_s, count: 2
     assert_select "tr>td", text: "Category".to_s, count: 2
     assert_select "tr>td", text: "Text".to_s, count: 2
